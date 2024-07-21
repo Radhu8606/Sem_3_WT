@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <script>
+        let a = prompt("Enter first number:");
+        let b = prompt("Enter second number:");
+        let c = prompt("Enter sign(+foradd,-forsub,*formul,/fordiv):");
+        let result
+        switch(c){
+            case '+': 
+               result= a+b;
+                break;
+
+            case '-': 
+                result=a-b;
+                break;
+
+            case '*':  
+               result= a*b;
+                break;
+
+            case '/': 
+                result=a/b;
+                break;
+
+                default:
+                    document.write("invalid sign");
+        }
+    </script>
+</body>
+</html>
