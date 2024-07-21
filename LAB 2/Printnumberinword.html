@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var a = prompt("Enter number:");
+       var output;
+       if(isNaN(a)){
+        document.write("It is not a number");
+       }
+       if(a<0 || a>999){
+        document.write("This number is out of range");
+       }
+       var units = ["zreo","one","two","three","four","five","six","seven","eight","nine","ten"];
+       var teens = ["eleven","twelve","thirteen","fourteen","fifteen","sixtenn","seventeen","eighteen","nineteen"];
+       var tens = ["twenty","thirty","fourty","fifty","sixty","seventy","eighty","ninety"];
+       
+       if(a>100){
+          output += units[Math.floor(a/100)]+'Hundred';
+          a%= 100;
+       }
+        if(a >= 20){
+             output += tens[Math.floor(a/10)-2];
+        }
+        else if(a <= 10){
+            output += units[a]+'';
+        } 
+        document.write(output);
+    </script>
+</body>
+</html>

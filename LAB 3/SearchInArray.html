@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var i;
+        var sentence = [" Lorem, ipsum dolor sit amet consectetur ","adipisicing elit. Quae molestiae totam blanditiis"
+            ,"explicabo dolorem esse nostrum a alias"," Perspiciatis, molestiae aliquam! Praesentium sapiente "
+            ,"voluptate molestias non expedita nemo quae reiciendis."
+        ]
+        var search = "nostrum";
+        var index = -1;
+        for(i=0;i<sentence.length;i++){
+            if(sentence[i].includes(search)){
+                index=i;
+            }
+        }
+        document.write("Index of word is:"+index);
+    </script>
+    </body>
+</html>

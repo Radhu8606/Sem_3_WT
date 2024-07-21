@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var product = [
+  {
+    "createdAt": "2024-06-24T09:35:07.103Z",
+    "name": "Lauren Hoeger",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/633.jpg",
+    "company": "Block, Schowalter and Oberbrunner",
+    "prize": "Operations",
+    "id": "1"
+  },
+  {
+    "createdAt": "2024-06-23T19:32:03.333Z",
+    "name": "June Haag",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/945.jpg",
+    "company": "Reinger Group",
+    "prize": "pixel",
+    "id": "2"
+  },
+  {
+    "createdAt": "2024-06-23T23:49:00.694Z",
+    "name": "Lyle Lehner",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/455.jpg",
+    "company": "Wuckert - Balistreri",
+    "prize": "Incredible",
+    "id": "3"
+  },
+  {
+    "createdAt": "2024-06-23T22:22:28.814Z",
+    "name": "Catherine Hane",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/948.jpg",
+    "company": "Skiles - Jerde",
+    "prize": "male",
+    "id": "4"
+  },
+  {
+    "createdAt": "2024-06-24T03:26:16.784Z",
+    "name": "Mrs. Toni Becker Jr.",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1133.jpg",
+    "company": "Thiel Group",
+    "prize": "South",
+    "id": "5"
+  },
+  {
+    "createdAt": "2024-06-24T09:31:15.116Z",
+    "name": "Amber Metz",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/122.jpg",
+    "company": "Crona Inc",
+    "prize": "rubbery",
+    "id": "6"
+  },
+  {
+    "createdAt": "2024-06-24T10:35:20.554Z",
+    "name": "Darin Beier",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/258.jpg",
+    "company": "Prosacco LLC",
+    "prize": "global",
+    "id": "7"
+  },
+  {
+    "createdAt": "2024-06-24T13:36:57.389Z",
+    "name": "Janis Hickle",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/130.jpg",
+    "company": "Wilderman - Deckow",
+    "prize": "Clothing",
+    "id": "8"
+  },
+  {
+    "createdAt": "2024-06-24T09:28:21.544Z",
+    "name": "Allan Ritchie",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/97.jpg",
+    "company": "Wilkinson Inc",
+    "prize": "Northwest",
+    "id": "9"
+  },
+  {
+    "createdAt": "2024-06-24T10:37:44.804Z",
+    "name": "Monica Boehm",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1237.jpg",
+    "company": "Schuppe Inc",
+    "prize": "port",
+    "id": "10"
+  }
+]
+document.write("<table border='2px solid black'>");
+    for(var i=0;i<product.length;i++){
+        document.write("<tr>");
+            document.write("<td>"+product[i].createdAt+"</td>");
+            document.write("<td>"+product[i].name+"</td>");
+            document.write("<td>"+product[i].avatar+"</td>");
+            document.write("<td>"+product[i].company+"</td>");
+            document.write("<td>"+product[i].prize+"</td>");
+            document.write("<td>"+product[i].id+"</td>");
+        document.write("</tr>");
+    }
+  document.write("</table>");  
+    </script>
+</body>
+</html>
+       

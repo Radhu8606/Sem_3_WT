@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1px" width="10%">
+        <tr><td id="output_box" colspan="4"></td></tr>
+            <tr>
+                <td><input type="button" value="AC" id="clear" onclick="clr()"></td>
+                <td><input type="button" value="C" id="CE" onclick="ce()"></td>
+                <td><input type="button" value="%" id="percent" onclick="display(this.value)"></td>
+                <td><input type="button" value="/" id="division" onclick="display(this.value)"></td>
+            </tr>
+
+            <tr>
+               <td> <input type="button" value="7" id="number" onclick="display(this.value)"></td>
+               <td><input type="button" value="8" id="number" onclick="display(this.value)"></td>
+               <td><input type="button" value="9" id="number" onclick="display(this.value)"></td>
+               <td> <input  type="button" value="*" id="multiplication" onclick="display(this.value)"></td>
+            </tr>
+            
+             <tr>
+                <td><input type="button" value="4" id="number" onclick="display(this.value)"></td>
+                <td> <input type="button" value="5" id="number" onclick="display(this.value)"></td>
+                <td><input type="button" value="6" id="number" onclick="display(this.value)"></td>
+                <td><input type="button" value="-" id="subtraction" onclick="display(this.value)"></td>
+            </tr>
+            
+             <tr>
+                <td><input type="button" value="1" id="number" onclick="display(this.value)"></td>
+                <td> <input type="button" value="2" id="number" onclick="display(this.value)"></td>
+                <td><input type="button" value="3" id="number" onclick="display(this.value)"></td>
+                <td><input type="button" value="+" id="addition" onclick="display(this.value)"></td>
+            </tr>
+            
+            <tr>
+                <td><input type="button" value="+/-" id="plus/minius" onclick="display(this.value)"></td>
+                <td> <input type="button" value="0" id="number" onclick="display(this.value)"></td>
+                <td> <input type="button" value="." id="point" onclick="display(this.value)"></td>
+                <td><input type="button" value="=" id="equal" onclick="eql()"></td>
+            </tr>
+    </table>
+    <script>
+          function display(n){
+              let display = document.getElementById('output_box');
+              display.innerText += n
+          }
+          function clr(){
+            let clear = document.getElementById('clear');
+            let display = document.getElementById('output_box');
+            display.innerText = '';
+          }
+          function ce(){
+            let ce = document.getElementById('CE');
+            let display = document.getElementById('output_box');
+            display.innerText = '';
+          }
+          function eql(){
+            let display = document.getElementById('output_box');
+            let a = display.innerHTML; 
+            try{
+                let b = new Function(`return (${a})`)();
+                display.innerHTML = b;
+            }
+            catch(ex){
+                display.innerHTML = "error";
+            }
+          }
+    </script>
+</body>
+</html>

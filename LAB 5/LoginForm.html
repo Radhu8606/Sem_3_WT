@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            background-color:antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <form>
+    <table align="center">
+        <tr>
+            <td><h1>LOGIN PAGE</h1></td>
+        </tr>
+        <tr>
+            <td>Enter your user ID:</td>
+            <td><input type="text" id="user" onclick="validate()"/></td>
+        </tr>
+        <tr>
+            <td>Enter password:</td>
+            <td><input type="text" id="pass" onclick="validate()"/></td>
+        </tr>
+        <tr>
+            <td>Enter confirm password:</td>
+            <td><input type="text" id="pass2" onclick="validate()"/></td>
+        </tr>
+        <tr>
+            <td><button onclick="validate()">Login</button></td>
+            <td><button>cancle</button></td>
+        </tr>
+    </table>
+    </form>
+    <script>
+        let name = document.getElementById(user);
+
+        let password = document.getElementById(pass)
+        let pattern = /[!@$#*^%]{1}[0-9]{7}/
+        let reg = new regexp(pattern);
+
+        let cofirm_password = document.getElementById(pass2)
+
+        function validate(){
+            if(!(name.value.length>8)){
+                document.write("Invalid User Name")
+            }
+            else if(!(reg.test(password.length))){
+                document.write("Invalid Password")
+            }
+            else if(!(password == confirm_password)){
+                document.write("Invalid confirm password")
+            }
+        }
+    </script>
+</body>
+</html>
